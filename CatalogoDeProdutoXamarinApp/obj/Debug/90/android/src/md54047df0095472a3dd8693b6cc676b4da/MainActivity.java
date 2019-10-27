@@ -1,4 +1,4 @@
-package md50e8b6400c75ff1f141ad019318b727f4;
+package md54047df0095472a3dd8693b6cc676b4da;
 
 
 public class MainActivity
@@ -13,7 +13,7 @@ public class MainActivity
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onRequestPermissionsResult:(I[Ljava/lang/String;[I)V:GetOnRequestPermissionsResult_IarrayLjava_lang_String_arrayIHandler\n" +
 			"";
-		mono.android.Runtime.register ("CatalogoDeProdutoXamarinApp.MainActivity, CatalogoDeProdutoXamarinApp", MainActivity.class, __md_methods);
+		mono.android.Runtime.register ("CatalogoDeProdutoXamarinApp.Activity.MainActivity, CatalogoDeProdutoXamarinApp", MainActivity.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class MainActivity
 	{
 		super ();
 		if (getClass () == MainActivity.class)
-			mono.android.TypeManager.Activate ("CatalogoDeProdutoXamarinApp.MainActivity, CatalogoDeProdutoXamarinApp", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("CatalogoDeProdutoXamarinApp.Activity.MainActivity, CatalogoDeProdutoXamarinApp", "", this, new java.lang.Object[] {  });
 	}
 
 
