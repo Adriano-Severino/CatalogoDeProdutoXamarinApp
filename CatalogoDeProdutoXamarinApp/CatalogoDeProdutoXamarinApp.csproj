@@ -66,19 +66,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity\ActivityAbout.cs" />
-    <Compile Include="Activity\ActivityAddDeleteEditProduct.cs" />
+    <Compile Include="Activity\ActivityAddDeleteUpdateProduct.cs" />
     <Compile Include="Activity\ActivityAddCategory.cs" />
-    <Compile Include="Activity\ActivityAddDeleteEditCategory.cs" />
+    <Compile Include="Activity\ActivityAddDeleteUpdateCategory.cs" />
     <Compile Include="Activity\ActivityAddProduct.cs" />
     <Compile Include="Activity\ActivityDeleteCategory.cs" />
     <Compile Include="Activity\ActivityDeleteProduct.cs" />
+    <Compile Include="Activity\ActivityUpdateCategory.cs" />
     <Compile Include="Activity\ActivityGetCategory.cs" />
     <Compile Include="Activity\ActivityGetProduct.cs" />
-    <Compile Include="Activity\ActivityUpdateCategory.cs" />
     <Compile Include="Activity\ActivityUpdateProduct.cs" />
     <Compile Include="Activity\MainActivity.cs" />
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Produto.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -114,7 +114,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repository\" />
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
@@ -155,11 +154,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\UpdateCategory.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\layout\AddCategory.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -175,12 +169,17 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\AddEditDeleteCategory.xml">
+    <AndroidResource Include="Resources\layout\AddUpdateDeleteCategory.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\AddDeleteEditProduct.xml">
+    <AndroidResource Include="Resources\layout\AddDeleteUpdateProduct.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\UpdateCategory.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

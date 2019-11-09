@@ -11,10 +11,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout1" >
         <Button
-            android:text="Get Category"
+            android:text="Add Category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/GetCategory" />
+            android:id="@+id/btnAddCategory" />
     </LinearLayout>
     <ListView
         android:minWidth="25px"

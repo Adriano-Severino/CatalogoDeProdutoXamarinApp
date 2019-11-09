@@ -1,7 +1,7 @@
 package md54047df0095472a3dd8693b6cc676b4da;
 
 
-public class ActivityAddDeleteEditProduct
+public class ActivityAddDeleteUpdateCategory
 	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
@@ -12,15 +12,15 @@ public class ActivityAddDeleteEditProduct
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("CatalogoDeProdutoXamarinApp.Activity.ActivityAddDeleteEditProduct, CatalogoDeProdutoXamarinApp", ActivityAddDeleteEditProduct.class, __md_methods);
+		mono.android.Runtime.register ("CatalogoDeProdutoXamarinApp.Activity.ActivityAddDeleteUpdateCategory, CatalogoDeProdutoXamarinApp", ActivityAddDeleteUpdateCategory.class, __md_methods);
 	}
 
 
-	public ActivityAddDeleteEditProduct ()
+	public ActivityAddDeleteUpdateCategory ()
 	{
 		super ();
-		if (getClass () == ActivityAddDeleteEditProduct.class)
-			mono.android.TypeManager.Activate ("CatalogoDeProdutoXamarinApp.Activity.ActivityAddDeleteEditProduct, CatalogoDeProdutoXamarinApp", "", this, new java.lang.Object[] {  });
+		if (getClass () == ActivityAddDeleteUpdateCategory.class)
+			mono.android.TypeManager.Activate ("CatalogoDeProdutoXamarinApp.Activity.ActivityAddDeleteUpdateCategory, CatalogoDeProdutoXamarinApp", "", this, new java.lang.Object[] {  });
 	}
 
 
