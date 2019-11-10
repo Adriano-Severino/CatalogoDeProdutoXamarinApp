@@ -27,8 +27,7 @@ namespace CatalogoDeProdutoXamarinApp.Activity
         private Button btnAddProduct;
 
         List<Produto> productSelected;
-
-        private const string Url = "http://localhost:3000/v1/";
+        
         private readonly HttpClient _client = new HttpClient();
 
         protected override void OnCreate(Bundle savedInstanceState)

@@ -26,8 +26,7 @@ namespace CatalogoDeProdutoXamarinApp.Activity
         private Button btnAddCategory;
 
         List<Categoria> categorySelected;
-
-        //private const string Url = "http://192.168.0.101:3000/v1/";
+        
         private readonly HttpClient _client = new HttpClient();
       
 
