@@ -66,12 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity\ActivityAbout.cs" />
-    <Compile Include="Activity\ActivityAddDeleteUpdateProduct.cs" />
     <Compile Include="Activity\ActivityAddCategory.cs" />
-    <Compile Include="Activity\ActivityAddDeleteUpdateCategory.cs" />
     <Compile Include="Activity\ActivityAddProduct.cs" />
-    <Compile Include="Activity\ActivityDeleteCategory.cs" />
-    <Compile Include="Activity\ActivityDeleteProduct.cs" />
     <Compile Include="Activity\ActivityUpdateCategory.cs" />
     <Compile Include="Activity\ActivityGetCategory.cs" />
     <Compile Include="Activity\ActivityGetProduct.cs" />
@@ -117,6 +113,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Mono.Data.Sqlite.Portable">
+      <Version>1.0.3.5</Version>
+    </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.2</Version>
     </PackageReference>
@@ -144,16 +143,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\DeleteProduct.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\DeleteCategory.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\layout\AddCategory.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -165,16 +154,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\About.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\AddUpdateDeleteCategory.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\AddDeleteUpdateProduct.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

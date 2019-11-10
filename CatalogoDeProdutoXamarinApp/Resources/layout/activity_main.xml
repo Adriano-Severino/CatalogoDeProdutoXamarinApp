@@ -11,21 +11,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/linearLayout1">
+      <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="197.5dp"
+        android:id="@+id/Logo" />
         <Button
-            android:text="Get/Add/Edit/delete Product"
+            android:text="Get Product"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/AddEditDeleteProduct" />
+            android:id="@+id/GetProduct" />
         <Button
-            android:text="Get/Add/Edit/delete Category"
+            android:text="Get Category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/AddEditDeleteCategory" />
+            android:id="@+id/GetCategory" />
         <Button
             android:text="About"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/BtnAbout" />
+            android:id="@+id/btnAbout" />
         
     </LinearLayout>
     

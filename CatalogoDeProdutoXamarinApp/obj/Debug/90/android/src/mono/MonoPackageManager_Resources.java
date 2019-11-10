@@ -4,6 +4,8 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "CatalogoDeProdutoXamarinApp.dll" comes first in this list. */
 		"CatalogoDeProdutoXamarinApp.dll",
 		"Newtonsoft.Json.dll",
+		"System.Data.Portable.dll",
+		"System.Transactions.Portable.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

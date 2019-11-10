@@ -9,28 +9,23 @@
     android:minHeight="25px"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/linearLayout1">
+    android:id="@+id/linearLayout1" >
     <Button
-      android:text="Get Product"
+      android:text="Add Product"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:id="@+id/Get_Product" />
-    <Button
-      android:text="Button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/button2" />
-    <Button
-      android:text="Button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/button3" />
+      android:id="@+id/btnAddProduct" />
     <TextView
-      android:text="Small Text"
+      android:text="Products: 0"
       android:textAppearance="?android:attr/textAppearanceSmall"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:id="@+id/textProduct" />
-        
+    <ListView
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/listProduct" />
   </LinearLayout>
 </LinearLayout>

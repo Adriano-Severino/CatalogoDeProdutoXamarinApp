@@ -13,32 +13,48 @@ namespace CatalogoDeProdutoXamarinApp.Activity
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        public static string UrlApi = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";/* DeviceInfo.Platform == DevicePlatform.Android*/
+        public static string UrlApi = "https://localhost:5001";/* DeviceInfo.Platform == DevicePlatform.Android*/
         //    ? "http://10.2.2:5000"
         //    : "http://localhost:5000";
         ////  "https://localhost:5001";
 
 
-        private Button AddUpdateDeleteProduct;
-        private Button AddUpdateDeleteCategory;
+        private Button GetProduct;
+        private Button GetCategory;
+        private Button btnAbout;
+        //private ImageView Logo;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
 
-            AddUpdateDeleteProduct = FindViewById<Button>(Resource.Id.AddEditDeleteProduct);
-            AddUpdateDeleteCategory = FindViewById<Button>(Resource.Id.AddEditDeleteCategory);
+            GetProduct = FindViewById<Button>(Resource.Id.GetProduct);
+            GetCategory = FindViewById<Button>(Resource.Id.GetCategory);
+            btnAbout = FindViewById<Button>(Resource.Id.btnAbout);
 
-            AddUpdateDeleteProduct.Click += AddUpdateDeleteProduct_Click;
-            AddUpdateDeleteCategory.Click += AddUpdateDeleteCategory_Click;
+            //logo
+            //Logo = FindViewById<ImageView>(Resource.Id.Logo);
+           // Logo.SetImageResource(Resource.Drawable.logo);
+
+            //==========================================================================================
+            GetProduct.Click += GetProduct_Click;
+            GetCategory.Click += GetCategory_Click;
+            btnAbout.Click += BtnAbout_Click;
+
 
         }
 
-        
+        private void BtnAbout_Click(object sender, System.EventArgs e)
+        {
+            //sobre
+            StartActivity(typeof(ActivityAbout));
+        }
+
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -46,18 +62,18 @@ namespace CatalogoDeProdutoXamarinApp.Activity
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
-        private void AddUpdateDeleteProduct_Click(object sender, System.EventArgs e)
+        private void GetProduct_Click(object sender, System.EventArgs e)
         {
             //abrir a atividade para add/editar/deletar e consular produtos
-           StartActivity( typeof(ActivityAddDeleteUpdateProduct));
+           StartActivity( typeof(ActivityGetProduct));
            
 
         }
 
-        private void AddUpdateDeleteCategory_Click(object sender, System.EventArgs e)
+        private void GetCategory_Click(object sender, System.EventArgs e)
         {
             //abrir a atividade para add/editar/deletar e consultar categorias
-           StartActivity(typeof(ActivityAddDeleteUpdateCategory));
+           StartActivity(typeof(ActivityGetProduct));
           
         }
 
